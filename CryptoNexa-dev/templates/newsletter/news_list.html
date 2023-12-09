@@ -1,0 +1,24 @@
+{% extends 'CryptoNexa/base.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/news_list.css' %}">
+
+{% endblock %}
+{% block content %}
+    <div class="container my-4">
+        <div class="header">
+            <h2>Latest News</h2>
+        </div>
+
+        <ul class="list-unstyled">
+            {% for article in news %}
+                <li class="news-item">
+                    <h2>{{ article.title }}</h2>
+                    <p>{{ article.content }}</p>
+                    <p><strong>Published Date:</strong> {{ article.pub_date }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+        <a href="{% url 'subscribe' %}">Subscribe to our news letter</a>
+    </div>
+{% endblock %}

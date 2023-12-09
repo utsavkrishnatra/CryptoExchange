@@ -1,0 +1,26 @@
+{% extends 'CryptoNexa/base.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/subscribe.css' %}">
+
+{% endblock %}
+{% block content %}
+    <div class="container my-4">
+        <div class="newsletter-form-container">
+            <h3 style="text-align: center; padding: 10px;">Subscribe to Crypto Newsletter</h3>
+            <form method="post" action="{% url 'subscribe' %}">
+                <p>Stay updated with the latest trends and insights in the crypto market!
+                    Our newsletter delivers valuable information, market analysis, and expert opinions
+                    to help you make informed decisions in the ever-evolving world of cryptocurrency.</p>
+                {% csrf_token %}
+
+                <div class="form-group">
+                    <label for="id_email">Email:</label>
+                    {{ form.email }}
+                </div>
+
+                <button class="btn btn-primary button" type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}

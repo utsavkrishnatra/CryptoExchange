@@ -1,0 +1,28 @@
+.alert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.form-select{
+    border-radius: 10px;
+    border: 2px solid grey;
+}
+.form-control {
+    border-radius: 10px;
+    border: 2px solid grey;
+}
+.input-group-text {
+    border-radius: 10px;
+    border: 2px solid grey;
+}
+
+.marginLeft {
+    margin-left: 20px;
+}
+
+i {
+    font-weight: normal;
+}

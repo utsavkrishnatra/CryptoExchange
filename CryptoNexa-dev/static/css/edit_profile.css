@@ -1,0 +1,43 @@
+.edit-profile-form-container {
+    background: white;
+    width: 100%;
+    margin: 3% auto auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.form-group input[type="email"],
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.form-group ul li
+{
+    color: red;
+    list-style: none;
+    padding: 0;
+    margin-top: -10px;
+}
+
+.button {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+}
